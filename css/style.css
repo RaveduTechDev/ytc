@@ -1,6 +1,7 @@
 @import url("font-awesome.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap");
 
 .hide {
   display: none;
@@ -14,6 +15,24 @@ body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
+}
+
+.sticky_nav {
+  background-color: #00000097;
+  transition: all 300ms;
+  padding: 10px 0;
+}
+
+.sticky_nav .custom_nav-container {
+  padding: 10px;
+}
+
+.sticky_nav .navbar-brand {
+  margin-top: 0;
+}
+
+.sticky_nav .nav-item .nav-link {
+  margin-top: -20px;
 }
 
 .hide {
@@ -178,7 +197,7 @@ body {
 }
 
 nav li a::after {
-  content: '';
+  content: "";
   width: 0%;
   height: 2px;
   background-color: #f1db25;
@@ -205,8 +224,8 @@ nav li a:hover::after {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 a,
@@ -866,7 +885,7 @@ a:focus {
   font-weight: bold;
 }
 
-.message textarea:focus+ :before {
+.message textarea:focus + :before {
   top: -35px;
 }
 
@@ -1141,7 +1160,7 @@ a:focus {
 
 .more-blog-list .blog-list-desc {
   margin: 10px;
-  font-weighT: small;
+  font-weight: small;
 }
 
 .more-blog-list .blog-list-desc a {
@@ -1241,10 +1260,9 @@ a:focus {
     margin-bottom: 0;
     margin-right: 20px;
   }
-
 }
 
-@media screen and (max-width:780px) {
+@media screen and (max-width: 780px) {
   .aside-content {
     display: none;
   }
@@ -1262,7 +1280,6 @@ a:focus {
   }
 }
 
-
 /* end blog section */
 
 .info_section {
@@ -1271,7 +1288,7 @@ a:focus {
   padding: 75px 0 10px 0;
 }
 
-.info_section .row>div {
+.info_section .row > div {
   margin-bottom: 25px;
 }
 
@@ -1401,7 +1418,6 @@ a:focus {
 
 .partnership .bg-partnership {
   overflow: hidden;
-
 }
 
 .partnership .bg-partnership .customer {
@@ -1425,7 +1441,6 @@ a:focus {
   margin: 4rem 3rem 0;
   justify-content: space-around;
   display: flex;
-
 }
 
 .partnership .bg-partnership .para-logo img {
@@ -1445,7 +1460,7 @@ a:focus {
     form {
       transform: translateX(0);
     }
-  
+
     to {
       transform: translateX(-500%);
     }
